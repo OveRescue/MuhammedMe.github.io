@@ -1,3 +1,5 @@
+# Python Game Programming Tutorial: Snake Game
+# Game make TokyoEdTech
 import turtle
 import time
 import random 
@@ -156,4 +158,5 @@ while True:
         x = snake_head.xcor()
         y = snake_head.ycor()
         segments[0].goto(x, y)
+
 wn.mainloop()
