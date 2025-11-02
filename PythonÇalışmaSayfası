@@ -1,0 +1,157 @@
+Python çalışma sayfası
+
+1 Python programlama dilini kim yaratmıştır ve hangi yıl piyasaya sürülmüştür?
+Python, Guido van Rossum tarafından oluşturulmuş ve 1991 yılında piyasaya sürülmüş popüler bir programlama dilidir. Web geliştirme (sunucu tarafı), yazılım geliştirme, matematik ve sistem scriptleme gibi birçok alanda kullanılır. Python farklı platformlarda (Windows, Mac, Linux) çalışır ve İngilizce diline benzer basit bir sözdizimine sahiptir.
+
+2 Python'un kullanıldığı 4 alanı yazınız.
+Web sunucu, Yazılım geliştirme, sistem scriptleme, matematik
+
+3 Ekrana "Python Öğreniyorum" yazdıran bir program yazın.
+print(“Python Öğreniyorum.”)
+
+4 Python'un diğer programlama dillerine göre 3 avantajını yazın.
+Basit ve anlaması kolay olması
+Ücretsiz ve Açık kaynak kodlu olması herkes değişiklik yapabilir.
+Her işletim sisteminde Python kodunu değiştirmek gerekmiyor direk çalışabilir.
+
+5 Python'da kod bloklarını tanımlamak için hangi yöntem kullanılır? (Süslü parantez mi, girinti mi?)
+Girinti kullanılır.
+
+
+
+
+
+
+
+Kaçış Karakterleri (Escape Characters)
+Nedir?
+Kaçış karakterleri (escape characters), string içinde normalde kullanılamayacak özel karakterleri kullanmamızı sağlar. Ters bölü işareti (\) ile başlar ve ardından özel bir karakter gelir. Örneğin, çift tırnak içinde çift tırnak kullanmak veya yeni satıra geçmek için kullanılır.
+Nasıl Kullanılır?
+Kaçış karakteri kullanmak için ters bölü (\) işaretinden sonra istediğiniz özel karakteri yazarsınız. Yaygın kullanılanlar: \n (yeni satır), \t (tab), \" (çift tırnak), \' (tek tırnak), \\ (ters bölü).
+Örnekler
+txt = "Biz \"Python\" öğrencileriyiz"
+print("Satır 1\nSatır 2")
+print("İsim:\tAhmet")
+print("C:\\Users\\Kullanici")
+1 Kaçış karakteri nedir ve ne için kullanılır?
+2 Ekrana şu çıktıyı verecek kodu yazın: Onlar "öğrenci" dedi. 
+txt = "Onlar \"Öğrenci\" dedi"
+print(txt)
+3 İki satırlı bir metin yazdıran kod yazın. Birinci satır "Merhaba", ikinci satır "Dünya"
+ 4 \n ve \t kaçış karakterlerinin işlevlerini açıklayın.
+
+\n = cümleyi yeni satıra geçirir.
+\t = cümlede devasa boşluk bırakır.
+
+
+
+
+
+
+String Formatlama
+Nedir?
+String formatlama, string içine değişken değerlerini veya ifadeleri yerleştirme işlemidir. Python'da f-string (formatted string literals) en modern ve yaygın kullanılan yöntemdir. String ve sayıları birleştirmek için kullanılır.
+Nasıl Kullanılır?
+f-string kullanmak için string'in başına f harfi koyun ve süslü parantezler {} içine değişkenleri veya ifadeleri yazın. Format belirleyicileri ile sayıların ondalık hassasiyetini kontrol edebilirsiniz.
+1 f-string nedir ve Python'un hangi sürümünden itibaren kullanılmaktadır?
+F-string, Python 3.6'da kullanıma sunulmuş ve dizeleri biçimlendirmenin daha iyi bir yolunu sağlamıştır.
+2 isim ve yas değişkenlerini kullanarak "Benim adım [isim], [yas] yaşındayım" şeklinde f-string ile çıktı veren kod yazın.
+yas = 22
+isim = "Muhammed"
+txt = f"Benim Adım {isim}, {yas} yaşındayım"
+
+print(txt)
+3. x = 9 olduğunda, ekrana "Fiyat 9.00 TL" yazdıran f-string kodu yazın.
+x = 9
+txt =f"Fiyat {x:2f} TL'dir."
+
+print(txt)
+4 f-string kullanarak 15 * 8 işleminin sonucunu "Çarpım: [sonuç]" şeklinde yazdırın.
+a = 15
+b = 8
+
+txt = f"Çarpım:{a * b}"
+print(txt)
+5 :.2f format belirteci ne işe yarar?
+2f kısmı Python'a değeri iki ondalık basamağa sahip kayan noktalı bir sayı ( f ) olarak biçimlendirmek istediğinizi söyler.
+String Metodları
+Nedir?
+String metodları, string üzerinde çeşitli işlemler yapmamızı sağlayan hazır fonksiyonlardır. Bu metodlar stringi büyük/küçük harfe çevirme, boşlukları temizleme, string içinde arama, değiştirme ve bölme gibi işlemleri gerçekleştirir.
+Nasıl Kullanılır?
+String metodlarını kullanmak için string değişkeninden sonra nokta koyup metod adını yazarız. Yaygın metodlar: upper() (büyük harf), lower() (küçük harf), strip() (boşluk temizleme), replace() (değiştirme), split() (bölme).
+1 "python programlama" stringini büyük harfe çeviren kodu yazın.
+a = "python programlama"
+
+print(a.upper())  # Tüm harfleri büyük yapar
+2 " Python " stringinin başındaki ve sonundaki boşlukları temizleyen kodu yazın.
+print(a.strip())  # Başındaki ve sonundaki boşlukları temizler
+3 "Merhaba Dünya" stringinde "Dünya" kelimesini "Python" ile değiştiren kodu yazın.
+a = "Merhaba Dünya"
+print(a.replace("Merhaba", "Python"))  # Çıktı: Python Dünya
+4 "Ahmet,Mehmet,Ali" stringini virgülden bölerek liste haline getiren kodu yazın.
+a = "Ahmet,Mehmet,Ali"
+print(a.split(","))  # ['Ahmet', 'Mehmet', 'Ali']
+5 upper() ve lower() metodlarının farkını açıklayın.
+Upper = yazıların büyümesini sağlar.
+Lower = yazıları küçük yazılmasını sağlar.
+
+
+
+Değişken Çıktısı
+Nedir?
+Değişken çıktısı, print() fonksiyonu ile değişkenlerin değerlerini ekrana yazdırma işlemidir. Python'da değişkenleri doğrudan print() içinde kullanabilir, birden fazla değişkeni virgülle ayırarak yazdırabilir veya + operatörü ile birleştirebiliriz.
+Nasıl Kullanılır?
+print() fonksiyonuna değişken ismini yazarak değişkenin değerini ekrana yazdırabilirsiniz. Birden fazla değişkeni virgül ile ayırarak yazdırırsanız aralarına otomatik boşluk konur. String ve sayıları + ile birleştiremezsiniz, virgül kullanmalısınız.
+1 x = "Python" ve y = "Öğreniyorum" değişkenlerini virgül ile ayırarak aynı satırda yazdıran kodu yazın.
+x = "Python"
+
+y = "Öğreniyorum"
+
+print(x, y)
+2. x = 15 ve y = 25 olduğunda, bu iki sayının toplamını ekrana yazdıran kodu yazın.	
+x = 15
+y = 25
+
+print("Toplam:", x + y)
+3 print("Merhaba", "Dünya") çıktısında kelimeler arasında neden boşluk var?
+, virgül ile arasına boşluk çıkmasını sağlıyor.
+4 isim = "Mehmet" ve yas = 20 değişkenlerini kullanarak "Mehmet 20" çıktısı veren kodu yazın.
+isim = "mehmet"
+
+yas = 20
+
+print(isim, yas)
+5 Neden x = 5 ve y = "Ali" olduğunda print(x + y) hata verir? Nasıl düzeltilir?
+Str yapılarak düzeltilebilir sayı yerine harf olduğu için değer alamaz işlem gerçekleştiremez.
+String Dilimleme (Slicing)
+Nedir?
+String dilimleme, bir string içinden belirli karakterleri veya karakter aralığını alma işlemidir. Python'da her karakter bir indeks numarasına sahiptir. İlk karakter 0 indeksindedir. Köşeli parantezler [] içinde indeksler belirtilerek dilimle yapılır.
+Nasıl Kullanılır?
+String dilimlemek için [başlangıç:bitiş] sözdizimi kullanılır. Başlangıç dahil, bitiş hariçtir. Negatif indeksler sondan başlayarak sayar (-1 son karakter). Başlangıç veya bitiş boş bırakılabilir.
+1 metin = "Programlama" stringinden ilk 7 karakteri dilimleyin.
+metin = "Programlama"
+
+print(metin[7:11])  # Çıktı: "ama"
+2 metin = "Python" stringinden son 3 karakteri negatif indeksleme ile alın.
+metin = "Python"
+
+print(metin[:3])
+3 metin[2:5] dilimlemesi hangi indekslerdeki karakterleri alır?
+tin ifadesini alır.
+4 kelime = "Bilgisayar" stringinden "gisa" kısmını dilimleyerek alın.
+metin = "bilgisayar"
+print(metin[3:7])  # 'gisa' karakterlerini yazdırır
+5 cümle = "Merhaba Dünya" stringinin baştan 4. karakterinden sonuna kadar olan kısmını alın.
+metin = "Merhaba Dünya"
+parca = metin[3:]
+
+print(parca)  # Çıktı: "haba Dünya"
+String Birleştirme
+Nedir?
+String birleştirme (concatenation), iki veya daha fazla stringi tek bir string haline getirme işlemidir. Python'da + operatörü kullanılarak stringler birleştirilir.
+Nasıl Kullanılır?
+İki stringi birleştirmek için aralarına + operatörü koyun. Stringler arasına boşluk eklemek isterseniz " " string'ini + ile ekleyin. Değişkenler ve sabit stringler birlikte kullanılabilir.
+
+
+
+
